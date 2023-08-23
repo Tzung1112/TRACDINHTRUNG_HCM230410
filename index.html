@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{ 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+ }
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    padding: 50px;
+}
+.user_tab{
+    width: 600px;
+  
+
+}
+.head_tab{
+    height: 70px;
+    background-color: rgb(91, 186, 186);
+    display: flex;
+}
+.left_head_tab{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.span{
+    flex: 1;
+    width: 100px;
+    text-align: left;
+
+}
+.mid_head_tab{
+       width: 100%;
+    height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.right_head_tab{
+       width: 100%;
+    height: 100%;
+}
+.body_tab{
+    background-color:rgb(242, 242, 242);
+}
+table{
+    width: 100%;
+    padding: 10px;
+}
+i{
+    cursor: pointer;
+}
+.name{
+    text-align: left;
+}
+.footer_tab{
+    height: 70px;
+    background-color: rgb(91, 186, 186);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+   
+}
+.input{
+
+flex: 3;
+background-color: aqua;
+}
+input{
+width: 100%;
+height: 30px;
+}
+.button{
+    width: 100px;
+flex: 1;
+}
+button{
+    width: 90%;
+    height: 30px;
+}
+.players{
+    background-color: rgb(91, 186, 186);
+    width: 15px;
+    color: black;
+}
+.w-highest-score {
+    color: red; /* Màu chữ khi người chơi có điểm cao nhất */
+}
+</style>
+<body>
+    <div class="container">
+        <div class="user_tab">
+            <div class="head_tab">
+                <div class="left_head_tab">
+                    <span class="span">Players:<input class="players" disabled type="text" id="players" name="id"></span>
+                    <span class="span">Total Points:<input class="players" disabled type="text" id="total" name="id"></span>
+                </div>
+                <div class="mid_head_tab"> <h3>Bảng Điểm</h3></div>
+                <div class="right_head_tab"></div>
+            </div>
+            <div class="body_tab">
+                <table id="table_user" class="table_user">
+                   
+                   
+                </table>
+            </div>
+            <div class="footer_tab">
+               <div class="input"><input id="name" type="text"></div>
+                <div class="button"><button onclick="addUser()">ADD</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
